@@ -17,7 +17,7 @@
   - Immutable - kan ikke endres, bruker `val`
   - Mutable - kan endres, bruker `var`
   - Immutable er default og det man vil bruke mest mulig
-- I Kotlin er alle typer objekter (ikke `boolean` men `Boolean`)
+- I Kotlin er alle typer objekter (ikke `boolean`, men `Boolean`)
 - Man trenger ikke eksplisitt angi type når man deklarerer, compiler kan utlede den
 - Man må eksplisitt definere om man ønsker å bruke mutable-lister, default er immutable
 
@@ -47,7 +47,17 @@
 - Kotlin prøver å eliminere NullPointerException
 - Eksplisitt angi at en type kan være null (`?`)
 - Trygge null-referanser (`?.`) - hvis ett av leddene er null, blir uttrykket null
-- Angi en alternativ verdi - Elvis-operator (?:)
+- Angi en alternativ verdi - Elvis-operator (`?:`)
 
 ### Lambda
 - More to come...
+
+## Koans
+- Et sett oppgaver ment til å gi en innføring i Kotlin
+- Oppgavene kan løses på to måter
+  - Edu-tools plugin i IntelliJ
+  - [I nettleser](https://play.kotlinlang.org/koans/overview)
+- Løs oppgave, kjør test, kikk på fasit
+
+## Nyttige linker
+- [Kotlin](https://kotlinlang.org/)
