@@ -21,7 +21,7 @@ open class Shape(name: String) {
    open fun draw() {}
 }
 
-class Circle(): Shape("circle") {
+class Circle: Shape("circle") {
    override fun draw() {
       println("drawing circle")
    }
