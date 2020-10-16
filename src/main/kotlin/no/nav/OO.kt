@@ -5,6 +5,8 @@ fun main() {
    val per = Person("Per", address)
    per.printMe()
    Circle().draw()
+   val driveables = listOf(Car(), Bike())
+   driveables.forEach { it.drive() }
 }
 
 class Person(private val name: String, private val address: Address) {
@@ -24,5 +26,21 @@ open class Shape(name: String) {
 class Circle: Shape("circle") {
    override fun draw() {
       println("drawing circle")
+   }
+}
+
+interface Driveable {
+   fun drive()
+}
+
+class Car: Driveable {
+   override fun drive() {
+      println("driving car")
+   }
+}
+
+class Bike: Driveable {
+   override fun drive() {
+      println("driving bike")
    }
 }
