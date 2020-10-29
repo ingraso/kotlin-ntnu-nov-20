@@ -8,7 +8,7 @@
 
 ## Språket
 
-### Main
+### Main (HelloWorld.kt)
 - En enkeltstående mainfunskjon nok til å kjøre
 - Trenger ikke ta imot kommandolinjeparameter, men kan
 
@@ -21,7 +21,7 @@
 - Man trenger ikke eksplisitt angi type når man deklarerer, compiler kan utlede den
 - Man må eksplisitt definere om man ønsker å bruke mutable-lister, default er immutable
 
-### Funksjoner
+### Funksjoner (Functions.kt, Extensions.kt, ScopeFunctions.kt)
 - Funksjoner er `fun` :)
 - Kan angi return-type, men Kotlin-compiler kan også skjønne det selv
 - Parametre må ha type
@@ -29,8 +29,9 @@
 - Single expression statement: Trenger da ikke krøllparenteser
 - Kan ta imot funksjoner som parametre (mer om lamba senere)
 - Extension functions, legg på dine egne metoder på objekt
+- Kjøre en kodeblokk med en gitt kontekst der verdien som sendes inn er lokalt tilgjengelig (scoped function)
 
-### Klasser og objekter
+### Klasser og objekter (OO.kt)
 - Klasser kan ha en default constructor som parametre rett til klassen
 - Data classes
   - Autogenerere getters og setters
@@ -39,18 +40,21 @@
 - Arv, på samme måte som i Java, men med litt annen syntaks
 - Det reserverte ordet `new` brukes ikke
 
-### Strings
+### Strings (Strings.kt)
 - Tripple quote - string over mange linjer med formattering
 - Template strings - putt variabler/uttrykk rett inn i String
 
-### Null
+### Null (Nulls.kt)
 - Kotlin prøver å eliminere NullPointerException
 - Eksplisitt angi at en type kan være null (`?`)
 - Trygge null-referanser (`?.`) - hvis ett av leddene er null, blir uttrykket null
 - Angi en alternativ verdi - Elvis-operator (`?:`)
+- Hvis man vet at noe ikke er null, men compileren tror det er null, bruk (`!!`), men forsiktig med bruk, tar du feil får du NullPointerException
 
-### Lambda
-- More to come...
+### Lambda (Functions.kt, Collections.kt)
+- Funksjon som parameter til en annen funksjon
+- Brukes i funksjonen som en hvilken som helst annen verdi
+- Dersom lambdauttrykket er eneste eller siste parameter til funksjonen, kan dette uttrykket løftes ut av funksjonskallet og legges i `{}` bak kallet
 
 ## Koans
 - Et sett oppgaver ment til å gi en innføring i Kotlin
