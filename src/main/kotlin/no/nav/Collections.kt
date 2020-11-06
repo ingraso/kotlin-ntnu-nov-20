@@ -16,8 +16,9 @@ val inventory = listOf(
 
 fun main() {
    println("heavy things: ${inventory.filter { it.weight > 10 }}")
-   println("heaviest things: ${inventory.maxByOrNull { it.weight }}")
-   println("by weight: ${inventory.associateBy { it.weight }}")
+   println("heaviest thing: ${inventory.maxByOrNull { it.weight }}")
+   println("grouped by weight: ${inventory.associateBy { it.weight }}")
    println("how many types of coffee do we have?: ${inventory.count { it.name.contains("coffee") }}")
-   println("avg weight of stuff heavier than 10: ${inventory.filter { it.weight > 10 }.map { it.weight }.average()}")
+   println("avg weight of stuff heavier than 10: " +
+      "${inventory.filter { it.weight > 10 }.map { it.weight }.average()}")
 }
