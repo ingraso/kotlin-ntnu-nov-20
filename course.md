@@ -12,7 +12,7 @@
 - En enkeltstående mainfunskjon nok til å kjøre
 - Trenger ikke ta imot kommandolinjeparameter, men kan
 
-### Typer
+### Typer (Types.kt)
 - Kotlin skiller på typer
   - Immutable - kan ikke endres, bruker `val`
   - Mutable - kan endres, bruker `var`
@@ -49,7 +49,7 @@
 - Eksplisitt angi at en type kan være null (`?`)
 - Trygge null-referanser (`?.`) - hvis ett av leddene er null, blir uttrykket null
 - Angi en alternativ verdi - Elvis-operator (`?:`)
-- Hvis man vet at noe ikke er null, men compileren tror det er null, bruk (`!!`), men forsiktig med bruk, tar du feil får du NullPointerException
+- Det er mulig å bruke `!!` for å overstyre null-sjekk, men det frarådes på det sterkeste
 
 ### Lambda (Functions.kt, Collections.kt)
 - Funksjon som parameter til en annen funksjon
