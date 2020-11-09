@@ -4,18 +4,24 @@ fun main() {
    val address = Address("Storgata", 22)
    val per = Person("Per", address)
    per.printMe()
+   val otherPersonAtSameAddress = per.copy(name = "NotPer")
+   otherPersonAtSameAddress.printMe()
    Circle().draw()
+
    val driveables = listOf(Car(), Bike())
    driveables.forEach { it.drive() }
 }
 
-class Person(private val name: String, private val address: Address) {
+class RegularClass(val member: String)
+
+data class Person(private val name: String, private val address: Address) {
    fun printMe() = println("$name lives at $address")
 }
 
 data class Address(val street: String, val houseNumber: Int)
 
 open class Shape(name: String) {
+
    init {
        println("initialising $name")
    }
