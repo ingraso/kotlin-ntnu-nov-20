@@ -12,6 +12,8 @@ fun main() {
    driveables.forEach { it.drive() }
 }
 
+class RegularClass(val member: String)
+
 data class Person(private val name: String, private val address: Address) {
    fun printMe() = println("$name lives at $address")
 }
